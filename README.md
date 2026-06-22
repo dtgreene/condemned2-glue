@@ -6,6 +6,8 @@ Condemned 2 Bloodshot experiments with the [rexglue-sdk](https://github.com/rexg
 
 [PPC for dummies](https://jimkatz.github.io/powerpc_for_dummies)
 
-### Dev builds
+### Prototypes
 
-[Condemned 2: Bloodshot (2008-02-03 prototype)](https://archive.org/details/Condemned220080203)
+[Condemned 2: Bloodshot (Feb 3, 2008 prototype)](https://archive.org/details/Condemned220080203)
+
+[Condemned 2: Bloodshot (Dec 12, 2007 prototype)](https://archive.org/details/Condemned2BloodshotDec122007prototype)
