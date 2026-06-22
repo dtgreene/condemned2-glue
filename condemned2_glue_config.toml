@@ -1,0 +1,103 @@
+[functions]
+0x8284DAE0 = {}
+0x82201CA8 = {}
+0x8221DCF8 = {}
+0x821B4F58 = {}
+0x82850480 = {}
+0x82841630 = {}
+0x82846138 = {}
+0x822416d8 = {}
+0x82278d48 = {}
+0x8221a958 = {}
+0x821b5d08 = {}
+0x822214b0 = {}
+0x821b4f70 = {}
+0x82265d90 = {}
+0x8221a938 = {}
+0x821f8480 = {}
+0x821f4eb8 = {}
+0x824da938 = {}
+0x821f84a8 = {}
+0x826006e8 = {}
+0x821c6440 = {}
+0x821b4f98 = {}
+0x821f4ef8 = {}
+0x821836a0 = {}
+0x821a09c0 = {}
+0x821235c8 = {}
+0x82183cf0 = {}
+
+# Inferred Names
+0x822DAF78 = { name = "Main_Resource_Manager_Init" }
+0x8223F990 = { name = "Stubbed_Logger_1" }
+0x826A7828 = { name = "Stubbed_Logger_2" }
+0x822F3150 = { name = "Retail_Check" }
+
+# Actual Names
+0x8265e2f8 = { name = "CCommandBuffer_GrowableAllocate" }
+0x82666150 = { name = "CDevice_KickOff" }
+0x821843f0 = { name = "CLTClient_RegisterConsoleProgram" }
+0x821791F8 = { name = "mainCRTStartup" }
+0x82650d08 = { name = "XMemAlloc" }
+
+0x82663E78 = { name = "D3DDevice_Resolve" }
+0x8265C4D8 = { name = "D3DDevice_SetRenderTarget_External" }
+0x826587A8 = { name = "D3DDevice_CreateTexture" }
+0x826663D0 = { name = "D3DDevice_BlockUntilIdle" }
+0x826664A0 = { name = "D3DDevice_SetRingBufferParameters" }
+0x82658af0 = { name = "D3DDevice_SetTexture" }
+0x8265db38 = { name = "D3DDevice_GetVertexShader" }
+0x8265d968 = { name = "D3DDevice_SetVertexShader" } 
+0x8265d828 = { name = "D3DDevice_GetPixelShader" } 
+0x8265d668 = { name = "D3DDevice_SetPixelShader" }
+0x8265bfb0 = { name = "D3DDevice_SetClipPlane" }
+0x8265a348 = { name = "D3DDevice_GetRenderState_ClipPlaneEnable" }
+0x8265a308 = { name = "D3DDevice_SetRenderState_ClipPlaneEnable" }
+0x82659f88 = { name = "D3DDevice_SetRenderState_ZEnable" }
+0x82661378 = { name = "D3DDevice_EndTiling" }
+0x8265C840 = { name = "D3DDevice_SetDepthStencilSurface" }
+0x82661850 = { name = "D3DDevice_SetScreenExtentQueryMode" }
+
+0x82659230 = { name = "D3DResource_AddRef" }
+0x82658c70 = { name = "D3DResource_GetType" }
+0x826592a8 = { name = "D3DResource_Release" }
+
+0x8265e198 = { name = "D3D_MakeBufferResourceSpace" }
+0x826654a0 = { name = "D3D_CDevice_BeginRingAlloc" }
+0x82665298 = { name = "D3D_RingBufferDeviceAllocate" }
+0x8265e088 = { name = "D3D_CommandBufferDeviceAllocate" }
+0x82667508 = { name = "D3D_FlushCachedMemory" }
+0x8266a968 = { name = "D3D_UninitializePresentationParameters" }
+0x82671F90 = { name = "D3D_UninitializeXps" }
+0x8265d4e8 = { name = "D3D_UninitializeGprAllocation" }
+0x8266AA08 = { name = "D3D_DeleteQueryBlock" }
+0x8265c440 = { name = "D3D_SetSurfaceInfo" }
+0x8265C030 = { name = "D3D_ResetAllState" }
+0x8266E318 = { name = "D3D_TrainEDRAM" }
+0x82665AF0 = { name = "D3D_BlockOnFence" }
+0x8265E5E0 = { name = "D3D_1CBlocker" }
+0x82659558 = { name = "D3D_SetSurfaceClip" }
+
+# CLTClient_RegisterConsoleProgram
+# DAT_82932814[0x14c] = RegisterCommand
+
+[[midasm_hook]]
+address = 0x8223F990
+name = "StubbedLogger1"
+registers = ["r4", "r5", "r6", "r7", "r8", "r9", "r10"]
+
+[[midasm_hook]]
+address = 0x826A7828
+name = "StubbedLogger2"
+registers = ["r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"]
+
+[[midasm_hook]]
+address = 0x8232d670
+name = "EnableCheats"
+registers = ["r3"]
+
+[[midasm_hook]]
+address = 0x822F3150
+name = "RetailCheck"
+registers = ["r3"]
+return = true
