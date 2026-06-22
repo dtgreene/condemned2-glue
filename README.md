@@ -8,4 +8,5 @@ Condemned 2 Bloodshot experiments with the [rexglue-sdk](https://github.com/rexg
 
 ### Prototypes
 
+[Condemned 2: Bloodshot (Dec 8, 2007 prototype)](https://hiddenpalace.org/Condemned_2:_Bloodshot_(Dec_8,_2007_prototype))
 [Condemned 2: Bloodshot (Dec 13, 2007 prototype)](https://archive.org/details/Condemned2BloodshotDec122007prototype)
