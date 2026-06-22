@@ -1,5 +1,5 @@
-# @category: Helpers
 # @runtime PyGhidra
+# @category XEX Helpers
 
 from java.awt import Toolkit
 from java.awt.datatransfer import StringSelection

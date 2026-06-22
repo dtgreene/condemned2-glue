@@ -5,8 +5,8 @@
 # and explicitly disassembles the instruction immediately after the
 # branch-and-link.
 
-# @category Analysis
 # @runtime PyGhidra
+# @category XEX Helpers
 
 
 from ghidra.app.cmd.disassemble import DisassembleCommand

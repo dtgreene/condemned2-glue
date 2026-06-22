@@ -1,5 +1,5 @@
 # @runtime PyGhidra
-# @category Helpers
+# @category XEX Helpers
 
 import re
 
